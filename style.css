@@ -28,6 +28,7 @@ table {
 }
 img {
     filter: grayscale(1);
+    
 }
 a {
     color: cyan;
@@ -37,4 +38,7 @@ a {
 }
 i {
     text-align: center;
+}
+.mobilepic {
+    width: 50ex;
 }
