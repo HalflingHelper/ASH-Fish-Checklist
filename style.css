@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Pixellari';
+    src: url('Pixellari.ttf');
+}
+
+html {
+    background-color: #28293b;
+    font-family: "Pixellari";
+    color:#ffee5b;
+    
+}
+
+
+button {
+    width: 250px;
+    height: 50px;
+    color:#ffee5b;
+    background-color: black;
+}
+table {
+    text-align: center;
+    
+}
+img {
+    filter: grayscale(1);
+}
+a {
+    color: cyan;
+}
+
+.info {
+    display: none;
+}
+
+i {
+    text-align: center;
+}
