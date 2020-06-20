@@ -35,10 +35,11 @@ a {
 }
 .info {
     display: none;
+    width: 200px;
 }
 i {
     text-align: center;
 }
 .mobilepic {
-    width: 50ex;
+    width: 100%;
 }
