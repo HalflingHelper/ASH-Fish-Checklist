@@ -13,7 +13,7 @@
         
     </head>
 <body onload="addImages()">
-<div>
+<div id="main">
 
     <table width=100%> 
         <tr>
@@ -46,11 +46,11 @@
         <tr>
             <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td> 
         </tr>
-        <tr><td colspan="3"><button onclick='selection(this, false)'>Clear</button></td></tr>
+        <tr><td colspan="3"><button onclick='selection(this, false)'>Clear</button> <button onclick="changeMode()">Switch to Mobile View</button></td></tr>
     </table>
 </div>
 <div>
-     
+     <br>
     <i width=100%, onclick="toggleInfo()">Information About Locations</i>
     
     <p class = "info">
