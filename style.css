@@ -7,12 +7,12 @@ html {
     background-color: #28293b;
     font-family: "Pixellari";
     color:#ffee5b;
-    
+
 }
 
 
 button {
-	background-color: #FFEE5B; 
+	background-color: #FFEE5B;
 	border: none;
 	color: #28293B;
 	padding: 15px 32px;
@@ -25,7 +25,6 @@ button {
   }
 table {
     text-align: center;
-    
 }
 img {
     filter: grayscale(1);
@@ -33,11 +32,9 @@ img {
 a {
     color: cyan;
 }
-
 .info {
     display: none;
 }
-
 i {
     text-align: center;
 }
