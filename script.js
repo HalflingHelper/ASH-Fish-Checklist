@@ -15,7 +15,7 @@ function addImages(){
     var pictures = document.getElementsByClassName("pic")
   
     for (let i = 0; i < pictures.length; i++) {
-      pictures[i].src = `fish/BasicFish_${fishOrder[i]}.png?v=1592589711297`
+      pictures[i].src = `fish/BasicFish_${fishOrder[i]}.png`
     }
   }
   
