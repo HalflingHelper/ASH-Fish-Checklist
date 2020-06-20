@@ -43,3 +43,7 @@ i {
 .mobilepic {
     width: 100%;
 }
+
+#mobile {
+    font-size: larger;
+}
