@@ -7,41 +7,43 @@ html {
     background-color: #28293b;
     font-family: "Pixellari";
     color:#ffee5b;
-
+    text-align: center;
 }
-
 
 button {
 	background-color: #FFEE5B;
 	border: none;
 	color: #28293B;
 	padding: 15px 32px;
-	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	width: 30ex;
-	height: 50px
-  }
-table {
-    text-align: center;
+    height: 50px;
 }
+
 img {
     filter: grayscale(1);
-    
 }
+
 a {
     color: cyan;
 }
-.info {
+#info {
     display: none;
-    width: 200px;
-}
-i {
-    text-align: center;
 }
 
+p {
+    margin: 15px 15px;
+}
 
-#mobile {
-    font-size: larger;
+#main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#toggle {
+    font-size: x-large;
 }

@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+  <head>
     <title>ASH Fish Checklist</title>
-<link rel="icon" type="image/png" href="https://cdn.glitch.com/95d2bace-3ca8-445d-af96-a14b2c304402%2Ffavicon.png">
-        <!-- import the webpage's stylesheet -->
+    <link rel="icon" type="image/png" href="https://cdn.glitch.com/95d2bace-3ca8-445d-af96-a14b2c304402%2Ffavicon.png">
+    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
 
     <!-- import the webpage's javascript file -->
     <script src="script.js" defer></script>
 
 
-    </head>
-<body onload="addImages()">
-<div id="main">
-
-    <table width=100%>
-        <tr>
-            <td>Common Carp </td><td>Northern Pike</td><td>Yellow Perch</td>
-        </tr>
-        <tr>
-            <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td>
-        </tr>
-        <tr>
-            <td>Rainbow Trout</td><td>Salmon</td><td>Catfish</td>
-        </tr>
-        <tr>
-            <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td>
-        </tr>
-        <tr>
-            <td>Burbot</td><td>Spotted Brook Trout</td><td>Pumpkinseed</td>
-        </tr>
-        <tr>
-            <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td>
-        </tr>
-        <tr>
-            <td>Crayfish</td><td>Bluegill</td><td>Brook Trout</td>
-        </tr>
-        <tr>
-            <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td>
-        </tr>
-        <tr>
-            <td>White Bass</td><td>White Perch</td>
-        </tr>
-        <tr>
-            <td><img class="pic" onclick="selection(this, true)"></td> <td><img class="pic" onclick="selection(this, true)"></td>
-        </tr>
-        <tr><td colspan="3"><button onclick="selection(this, false)">Clear</button> <button onclick="changeMode()">Switch to Mobile View</button></td></tr>
-    </table>
-</div>
-<div>
-     <br>
-    <i width=100%, onclick="toggleInfo()">Information About Locations</i>
-
-    <p class = "info">
-      <a href = "https://docs.google.com/document/d/1-ucHRtCOMn5OSxvupcWGlfF0FEuiCd7Z_ZvtS_zOn-c/edit?usp=sharing">
-        More detailed information and probabilities</a>
-
-      <ul class ="info">
-        <li>Common Carp - Found Almost Everywhere</li>
-        <li>Northern Pike - Found in Meteor Lake</li>
-        <li>Yellow Perch - Found in Meteor Lake</li>
-        <li>Rainbow Trout - Found in the Ocean and Meteor Lake</li>
-        <li>Brook Trout - Found in the summit pond and in the Ocean</li>
-        <li>White Bass - Found in cold ponds</li>
-        <li>Salmon - Found at the foot of waterfalls</li>
-        <li>Catfish - Found in all rivers</li>
-        <li>Spotted Brook Trout - Found in Oceans or in the bay near beachstickball</li>
-        <li>Burbot - Found in fast rivers</li>
-        <li>Crayfish - Found in tiny ponds</li>
-        <li>Pumpkinseed - Found in ponds with lillies</li>
-        <li>Bluegill - Found in the bay near the sandcastle frog</li>
-        <li> White Perch - Found in calm rivers</li>
-
-    </ul>
-    </p>
+  </head>
+  <body onload="addImages()">
+    <div id="main">
+      <p class="fish">Common Carp<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Northern Pike<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Yellow Perch<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Rainbow Trout<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Salmon<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Catfish<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Burbot<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Spotted Brook Trout<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Pumpkinseed<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Crayfish<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Bluegill<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">Brook Trout<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">White Bass<br><img class="pic" onclick="selection(this, true)"></p>
+      <p class="fish">White Perch<br><img class="pic" onclick="selection(this, true)"></p>
     </div>
 
+    <div>
+      <button onclick="selection(this, false)">Clear Selection</button>
+    </div>
+
+    <div width=100% >
+      <br>
+      <p width=100%, onclick="toggleInfo()", id="toggle">Information About Locations</p>
+
+      <p id="info">
+        <a href = "https://docs.google.com/document/d/1-ucHRtCOMn5OSxvupcWGlfF0FEuiCd7Z_ZvtS_zOn-c/edit?usp=sharing">More detailed information and probabilities</a>
+        <br><br>
+        Common Carp - Found Almost Everywhere<br>
+        Northern Pike - Found in Meteor Lake<br>
+        Yellow Perch - Found in Meteor Lake<br>
+        Rainbow Trout - Found in the Ocean and Meteor Lake<br>
+        Brook Trout - Found in the summit pond and in the Ocean<br>
+        White Bass - Found in cold ponds<br>
+        Salmon - Found at the foot of waterfalls<br>
+        Catfish - Found in all rivers<br>
+        Spotted Brook Trout - Found in Oceans or in the bay near beachstickball<br>
+        Burbot - Found in fast rivers<br>
+        Crayfish - Found in tiny ponds<br>
+        Pumpkinseed - Found in ponds with lillies<br>
+        Bluegill - Found in the bay near the sandcastle frog<br>
+        White Perch - Found in calm rivers<br>
+      </p>
+    </div>
   </body>
-  </html>
+</html>
